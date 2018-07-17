@@ -23,6 +23,7 @@ public class AppTest
     	driver.get("http://www.guru99.com");
     	String eTitle = "Meet Guru99";
     	String aTitle = driver.getTitle();
+    	System.out.println(aTitle);
     	if(aTitle.contentEquals(eTitle)) {
     		System.out.println("Test Passed!");
     	} else {
