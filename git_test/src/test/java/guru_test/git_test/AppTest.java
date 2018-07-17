@@ -24,7 +24,7 @@ public class AppTest
     	String eTitle = "Meet Guru99";
     	String aTitle = driver.getTitle();
     	System.out.println(aTitle);
-    	if(aTitle.contentEquals(eTitle)) {
+    	if(aTitle.contains(eTitle)) {
     		System.out.println("Test Passed!");
     	} else {
     		System.out.println("Test Failed");
