@@ -16,7 +16,7 @@ public class AppTest
 	protected WebDriver driver;
     @Test
     public void test() {
-    	System.setProperty("webdriver.chrome.driver", "C:\\chromdriver.exe");
+    	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"chromdriver.exe");
     	driver = new ChromeDriver();
     	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	driver.manage().window().maximize();
